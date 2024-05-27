@@ -1,0 +1,32 @@
+<div class="partners-form-container">
+    <!-- <form [formGroup]="partnersForm" (ngSubmit)="onSubmit()"> -->
+        <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name" type="text" class="form-control" />
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input id="phone" formControlName="phone" type="tel" class="form-control" />
+      </div>
+      
+      <div class="form-group">
+        <label for="idNumber">ID Number</label>
+        <input id="idNumber" formControlName="idNumber" type="text" class="form-control" />
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input id="address" formControlName="address" type="text" class="form-control" />
+      </div>
+      
+      <div class="form-group">
+        <label for="status">Status</label>
+        <input id="status" formControlName="status" type="text" class="form-control" />
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  

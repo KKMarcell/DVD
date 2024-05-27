@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="partners">
+        <h2>Partners</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>ID Card Number</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let partner of partners">
+                    <td>{{ partner.id }}</td>
+                    <td>{{ partner.name }}</td>
+                    <td>{{ partner.phone }}</td>
+                    <td>{{ partner.IDcard }}</td>
+                    <td>{{ partner.address }}</td>
+                    <td>{{ partner.status }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button routerLink="new-partner">Új hozzáadása</button>
+        <!-- <button (click)="addNewPartner()">Új hozzáadása</button> -->
+    </div>
+</div>
